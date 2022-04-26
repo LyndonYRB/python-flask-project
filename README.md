@@ -34,16 +34,16 @@ zipp==3.8.0
 
 ## Routes
 
-`http://127.0.0.1:5000/militarybase/` GET request
+`/militarybase/` GET request
 Get all the bases that I added to the database
 
-`http://127.0.0.1:5000/militarybase/<id>` GET request
+`/militarybase/<id>` GET request
 Select single review by id
 
-`http://127.0.0.1:5000/militarybase/` POST request
+`/militarybase/` POST request
 Create new entry
 
-`http://127.0.0.1:5000/militarybase/<id>` DELETE request
+`/militarybase/<id>` DELETE request
 Delete entry by id
 
 ## Contributing

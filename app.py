@@ -81,7 +81,10 @@ def endpoint(id=None):
             return jsonify(militarybasesList)
 
     if request.method == 'PUT':
-        return 'PUT request'
+        body = request.get_json()
+        query = MilitaryBase.update(body).where(MilitaryBase.id == id)
+        query.execute()
+        return jsonify({"updated": True})
 
     if request.method == 'POST':
         new_militarybase = dict_to_model(MilitaryBase, request.get_json())
@@ -89,7 +92,9 @@ def endpoint(id=None):
         return jsonify({"success": True})
 
     if request.method == 'DELETE':
-        return 'DELETE request'
+        deleted = MilitaryBase.delete().where(MilitaryBase.id == id)
+        deleted.execute()
+        return jsonify({"deleted": True})
 
 
 app.run(debug=True)
