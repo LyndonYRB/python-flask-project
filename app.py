@@ -29,6 +29,42 @@ MilitaryBase(base_name='Kunsan', location="Gunsan", branch_in_controll="Air Forc
 MilitaryBase(base_name='Osan', location="Songtan", branch_in_controll="Air Force",
              year_activated=1951, miles_from_dmv=48).save()
 
+MilitaryBase(base_name='Camp Carroll', location="Waegwan", branch_in_controll="Army",
+             year_activated=1959, miles_from_dmv=134).save()
+
+MilitaryBase(base_name='Camp Castle', location="Dongducheon", branch_in_controll="Army",
+             year_activated=1959, miles_from_dmv=20).save()
+
+MilitaryBase(base_name='Camp Eagle', location="Wonju", branch_in_controll="Army",
+             year_activated=1955, miles_from_dmv=50).save()
+
+MilitaryBase(base_name='Camp Humphreys', location="Dongducheon", branch_in_controll="Army",
+             year_activated=1950, miles_from_dmv=60).save()
+
+MilitaryBase(base_name='Camp Market', location="Yongsan", branch_in_controll="Army",
+             year_activated=2003, miles_from_dmv=30).save()
+
+MilitaryBase(base_name='Camp Red Cloud', location="Uijeongbu", branch_in_controll="Army",
+             year_activated=1950, miles_from_dmv=20).save()
+
+MilitaryBase(base_name='Camp Stanly', location="Uijeongbu", branch_in_controll="Army",
+             year_activated=1955, miles_from_dmv=15).save()
+
+MilitaryBase(base_name='Camp Hovey', location="Dongducheon", branch_in_controll="Army",
+             year_activated=1952, miles_from_dmv=15).save()
+
+MilitaryBase(base_name='Camp Casey', location="Dongducheon", branch_in_controll="Army",
+             year_activated=1952, miles_from_dmv=10).save()
+
+MilitaryBase(base_name='K 16 Air Base', location="Seongnam", branch_in_controll="Army",
+             year_activated=1951, miles_from_dmv=35).save()
+
+MilitaryBase(base_name='USAG Yongsan', location="Daegu", branch_in_controll="Army",
+             year_activated=2003, miles_from_dmv=30).save()
+
+MilitaryBase(base_name='USAG Daegu', location="Daegu", branch_in_controll="Army",
+             year_activated=1950, miles_from_dmv=150).save()
+
 app = Flask(__name__)
 
 
