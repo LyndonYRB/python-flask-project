@@ -12,9 +12,9 @@ class BaseModel(Model):
 
 
 class MilitaryBase(BaseModel):
-    name = CharField()
+    base_name = CharField()
     location = CharField()
-    branch = CharField()
+    branch_in_controll = CharField()
     year_activated = IntegerField()
     miles_from_dmv = IntegerField()
 
@@ -23,10 +23,10 @@ db.connect()
 db.drop_tables([MilitaryBase])
 db.create_tables([MilitaryBase])
 
-MilitaryBase(name='Kunsan', location="Gunsan", branch="Air Force",
+MilitaryBase(base_name='Kunsan', location="Gunsan", branch_in_controll="Air Force",
              year_activated=1938, miles_from_dmv=140).save()
 
-MilitaryBase(name='Osan', location="Songtan", branch="Air Force",
+MilitaryBase(base_name='Osan', location="Songtan", branch_in_controll="Air Force",
              year_activated=1951, miles_from_dmv=48).save()
 
 app = Flask(__name__)
