@@ -5,6 +5,17 @@ from playhouse.shortcuts import model_to_dict, dict_to_model
 db = PostgresqlDatabase('project', user='postgres',
                         password='0000', host='localhost', port=5432)
 
+app = Flask(__name__)
+
+
+@app.route('/')
+def home():
+    return "API"
+
+
+if __name__ == '__main__':
+    app.run
+
 
 class BaseModel(Model):
     class Meta:
